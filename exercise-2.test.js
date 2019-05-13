@@ -65,7 +65,9 @@ describe('Find a path such that the sum of the weights of all vertices on the pa
 
         graph._dfsUtil('A', visited);
         
-        expect(visited).toEqual({"A": true, "B": true, "C": true});
+        expect(visited["A"]).toBeTruthy();
+        expect(visited["B"]).toBeTruthy();
+        expect(visited["C"]).toBeTruthy();
     })
 
     it('should return no cycle when trigger detectCycle (function detect avoid infinite loop caused by cycles)', () => {
