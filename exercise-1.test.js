@@ -27,14 +27,6 @@ describe('Implement a store function and a load function', () => {
     })
 
     it('return array when text given with a string-based format \"key1=value1;key2=value2\nkeyA=valueA\"', () => {
-        const expected = [
-            {
-                key1: "value1",
-                key2: "value2"
-            }, {
-                keyA: "valueA"
-            }
-        ];
         const text = "key1=value1;key2=value2\nkeyA=valueA";
 
         const array = load(text);
