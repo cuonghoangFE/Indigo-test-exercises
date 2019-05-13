@@ -1,8 +1,8 @@
 const expect = require('expect');
 const { store, load } = require('./exercise-1');
 
-describe('store and load testing', () => {
-    it('render text from array', () => {
+describe('Implement a store function and a load function', () => {
+    it('should render text when array given', () => {
         const array = [
             {
                 key1: "value1",
@@ -18,13 +18,13 @@ describe('store and load testing', () => {
         expect(text).toEqual(expected);
     })
 
-    it('throw error if giving string', () => {
+    it('throw error when not array given', () => {
         const string = 'test case';
 
         expect(() => store(string) ).toThrow();
     })
 
-    it('return array when giving text', () => {
+    it('return array when text given right array type', () => {
         const expected = [
             {
                 key1: "value1",
@@ -40,7 +40,7 @@ describe('store and load testing', () => {
         expect(array).toEqual(expected);
     })
 
-    it('return throw error when giving not text', () => {
+    it('return throw error when not a string-based format given', () => {
         const text = new Object();
 
         expect(() => load(text)).toThrow();

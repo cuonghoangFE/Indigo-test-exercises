@@ -20,14 +20,14 @@ const bills = {
     }
 }
 
-describe('print bill with net payable amount', () => {
+describe('Write a program with test cases such that given a bill, it finds the net payable amount.', () => {
     it('should 30% discount when user_id === 1', () => {
         const expected = {
             '0': {
-                payableBeforeDiscount: 35,
+                subTotal: 35,
                 payAmountToPromo: 15,
                 discount: 10.5,
-                netPayable: 24.5
+                total: 24.5
             }
         }
         const payable = new NetPayableAmount();
@@ -39,13 +39,13 @@ describe('print bill with net payable amount', () => {
         expect(payable.discountPayBill).toEqual(expected)
     })
 
-    it('should discount pay on $100 step when user_id === 4', () => {
+    it('when userType === 4 it should discount 5$ for every $100', () => {
         const expected = {
             '0': {
-                payableBeforeDiscount: 35,
+                subTotal: 35,
                 payAmountToPromo: 15,
                 discount: 0,
-                netPayable: 35
+                total: 35
             }
         }
         const payable = new NetPayableAmount();
@@ -57,7 +57,7 @@ describe('print bill with net payable amount', () => {
         expect(payable.discountPayBill).toEqual(expected)
     })
 
-    it('should return user_id not in db when user_id === 5', () => {
+    it('should return user_id not found when user_id === 5', () => {
         const payable = new NetPayableAmount();
 
         const handler = payable.getUser(5);

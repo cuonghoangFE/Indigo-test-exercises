@@ -33,30 +33,30 @@ NetPayableAmount.prototype.getBills = function(bills) {
 }
 
 NetPayableAmount.prototype.getDiscountItemBill = function() {
-    const listCatPromo = Object.keys(category_list_discount).filter(catId => category_list_discount[catId] === 1);
+    const promotedCategoriesList = Object.keys(category_list_discount).filter(catId => category_list_discount[catId] === 1);
 
     for (key in this.bills) {
         let payAmountToPromo = 0;
-        let payableBeforeDiscount = 0;
+        let subTotal = 0;
         const listItem = this.bills[key].items;
-        const filterListItemPromo = listItem.filter(item => listCatPromo.includes(item.cat_id.toString()));
+        const filterListItemPromo = listItem.filter(item => promotedCategoriesList.includes(item.cat_id.toString()));
 
         listItem.map(item => {
-            payableBeforeDiscount += item.cost * item.qty;
+            subTotal += item.cost * item.qty;
         });
 
         filterListItemPromo.map(item => {
             payAmountToPromo += item.cost * item.qty;
         });
 
-        this.discountPayBill[key] = { payableBeforeDiscount, payAmountToPromo };
+        this.discountPayBill[key] = { subTotal, payAmountToPromo };
         this._getPayableDiscount();
     }
 }
 
 NetPayableAmount.prototype._getPayableDiscount = function() {
     for (key in this.discountPayBill) {
-        const payableBeforeDiscount = this.discountPayBill[key].payableBeforeDiscount;
+        const subTotal = this.discountPayBill[key].subTotal;
         const payAmountToPromo = this.discountPayBill[key].payAmountToPromo;
         let discount = 0;
 
@@ -69,7 +69,7 @@ NetPayableAmount.prototype._getPayableDiscount = function() {
         this.discountPayBill[key] = {
             ...this.discountPayBill[key],
             discount,
-            netPayable: payableBeforeDiscount - discount
+            total: subTotal - discount
         };
     }
 }

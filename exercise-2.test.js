@@ -1,7 +1,7 @@
 const expect = require('expect');
 const Graph = require('./exercise-2');
 
-describe('find maximized assumption in acyclic graph', () => {
+describe('Find a path such that the sum of the weights of all vertices on the path is maximized', () => {
     it('should return 5 when A1->B2->C2', () => {
         const graph = new Graph();
 
@@ -20,7 +20,7 @@ describe('find maximized assumption in acyclic graph', () => {
         expect(graph.findMaximized()).toEqual(5);
     })
 
-    it('should return 0 with no weight provide', () => {
+    it('should return 5 when A0->B0->C0', () => {
         const graph = new Graph();
 
         graph.addVertex('A');
@@ -34,7 +34,7 @@ describe('find maximized assumption in acyclic graph', () => {
         expect(graph.findMaximized()).toEqual(0);
     })
 
-    it('should call function with origin vertex A', () => {
+    it('should call function _dfsUtil with origin vertex A when implement depth-first search', () => {
         const graph = new Graph();
         graph._dfsUtil = jest.fn();
 
@@ -51,7 +51,7 @@ describe('find maximized assumption in acyclic graph', () => {
         expect(graph._dfsUtil).toBeCalledWith('A', {});
     })
 
-    it('should return visited dfs point when trigger _dfsUtil', () => {
+    it('should return visited point when trigger _dfsUtil', () => {
         const graph = new Graph();
         const visited = {};
 
@@ -68,7 +68,7 @@ describe('find maximized assumption in acyclic graph', () => {
         expect(visited).toEqual({"A": true, "B": true, "C": true});
     })
 
-    it('should return no cycle when trigger detectCycle', () => {
+    it('should return no cycle when trigger detectCycle (function detect avoid infinite loop caused by cycles)', () => {
         const graph = new Graph();
 
         graph.addVertex('A');
@@ -84,7 +84,7 @@ describe('find maximized assumption in acyclic graph', () => {
         expect(handler).toBe('no cycle');
     })
 
-    it('should return cycle when trigger detectCycle', () => {
+    it('should return cycle when trigger detectCycle (function detect avoid infinite loop caused by cycles)', () => {
         const graph = new Graph();
 
         graph.addVertex('A');
