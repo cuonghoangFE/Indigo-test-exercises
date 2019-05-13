@@ -41,7 +41,7 @@ describe('Implement a store function and a load function', () => {
 
         expect(array[0]['key1']).toBe('value1');
         expect(array[0]['key2']).toBe('value2');
-        expect(array).toEqual(expected);
+        expect(array[1]['keyA']).toBe('valueA');
     })
 
     it('return throw error when not a string-based format given', () => {

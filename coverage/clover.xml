@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557730377828" clover="3.2.0">
-  <project timestamp="1557730377828" name="All files">
+<coverage generated="1557730656380" clover="3.2.0">
+  <project timestamp="1557730656380" name="All files">
     <metrics statements="115" coveredstatements="115" conditionals="28" coveredconditionals="28" methods="25" coveredmethods="25" elements="168" coveredelements="168" complexity="0" loc="115" ncloc="115" packages="1" files="3" classes="3"/>
     <file name="exercise-1.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-1.js">
       <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
