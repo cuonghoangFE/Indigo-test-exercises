@@ -1,0 +1,14 @@
+### Requirements
+
+##### Node environment, Jest and expect
+
+##### npm install
+
+### Install packages
+
+##### npm install
+
+### How to run test
+
+##### npm run test
+##### npm run test:coverage

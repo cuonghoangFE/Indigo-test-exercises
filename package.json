@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test nodejs",
+  "main": "exercise-1.js",
+  "dependencies": {},
+  "devDependencies": {
+    "expect": "^24.8.0",
+    "jest": "^24.8.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "author": "cuonghc",
+  "license": "ISC"
+}
