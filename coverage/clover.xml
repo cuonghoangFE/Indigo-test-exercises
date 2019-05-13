@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557550799945" clover="3.2.0">
-  <project timestamp="1557550799945" name="All files">
+<coverage generated="1557730082833" clover="3.2.0">
+  <project timestamp="1557730082833" name="All files">
     <metrics statements="115" coveredstatements="115" conditionals="28" coveredconditionals="28" methods="25" coveredmethods="25" elements="168" coveredelements="168" complexity="0" loc="115" ncloc="115" packages="1" files="3" classes="3"/>
-    <file name="exercise-1.js" path="/Users/cuong.hoang/Desktop/untitled folder/exercise-1.js">
+    <file name="exercise-1.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-1.js">
       <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
       <line num="1" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
@@ -26,7 +26,7 @@
       <line num="52" count="2" type="stmt"/>
       <line num="55" count="1" type="stmt"/>
     </file>
-    <file name="exercise-2.js" path="/Users/cuong.hoang/Desktop/untitled folder/exercise-2.js">
+    <file name="exercise-2.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-2.js">
       <metrics statements="58" coveredstatements="58" conditionals="14" coveredconditionals="14" methods="9" coveredmethods="9"/>
       <line num="2" count="6" type="stmt"/>
       <line num="3" count="6" type="stmt"/>
@@ -87,7 +87,7 @@
       <line num="99" count="1" type="stmt"/>
       <line num="103" count="1" type="stmt"/>
     </file>
-    <file name="exercise-3.js" path="/Users/cuong.hoang/Desktop/untitled folder/exercise-3.js">
+    <file name="exercise-3.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-3.js">
       <metrics statements="36" coveredstatements="36" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
