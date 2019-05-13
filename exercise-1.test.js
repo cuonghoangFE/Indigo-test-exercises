@@ -26,31 +26,35 @@ describe('Implement a store function and a load function', () => {
         expect(() => store(string) ).toThrow();
     })
 
-    it('detect key and value match expected when text given with a string-based format \"key1=value1;key2=value2\nkeyA=valueA\"', () => {
+    describe('should return array below when text given with a string-based format \"key1=value1;key2=value2\nkeyA=valueA\"', () => {
         const text = "key1=value1;key2=value2\nkeyA=valueA";
 
         const array = load(text);
 
-        expect(array[0]['key1']).toBe('value1');
-        expect(array[0]['key2']).toBe('value2');
-        expect(array[1]['keyA']).toBe('valueA');
-    })
+        it('detect object have key1 is value1 in array position 0', () => {
+            expect(array[0]['key1']).toBe('value1');
+        })
 
-    it('should return array below when text given with a string-based format \"key1=value1;key2=value2\nkeyA=valueA\"', () => {
-        const expected = [
-            {
-                key1: "value1",
-                key2: "value2"
-            }, {
-                keyA: "valueA"
-            }
-        ];
+        it('detect object have key2 is value2 in array position 0', () => {
+            expect(array[0]['key2']).toBe('value2');
+        })
 
-        const text = "key1=value1;key2=value2\nkeyA=valueA";
+        it('detect object have keyA is valueA in array position 1', () => {
+            expect(array[1]['keyA']).toBe('valueA');
+        })
 
-        const array = load(text);
-
-        expect(array).toEqual(expected);
+        it('detect array as expected', () => {
+            const expected = [
+                {
+                    key1: "value1",
+                    key2: "value2"
+                }, {
+                    keyA: "valueA"
+                }
+            ];
+            
+            expect(array).toEqual(expected);
+        })
     })
 
     it('return throw error when not a string-based format given', () => {

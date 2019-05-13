@@ -51,7 +51,7 @@ describe('Find a path such that the sum of the weights of all vertices on the pa
         expect(graph._dfsUtil).toBeCalledWith('A', {});
     })
 
-    it('should return visited point when trigger _dfsUtil', () => {
+    describe('should return visited point when trigger _dfsUtil with origin vertex A', () => {
         const graph = new Graph();
         const visited = {};
 
@@ -64,10 +64,28 @@ describe('Find a path such that the sum of the weights of all vertices on the pa
         graph.addEgde('A', 'C');
 
         graph._dfsUtil('A', visited);
-        
-        expect(visited["A"]).toBeTruthy();
-        expect(visited["B"]).toBeTruthy();
-        expect(visited["C"]).toBeTruthy();
+
+        it('should have key A in object return', () => {
+            expect(visited["A"]).toBeTruthy();
+        });
+
+        it('should have key B in object return', () => {
+            expect(visited["B"]).toBeTruthy();
+        });
+
+        it('should have key C in object return', () => {
+            expect(visited["C"]).toBeTruthy();
+        });
+
+        it('should return expected object below', () => {
+            const expected = {
+                A: true,
+                B: true,
+                C: true
+            }
+
+            expect(visited).toEqual(expected);
+        });
     })
 
     it('should return no cycle when trigger detectCycle (function detect avoid infinite loop caused by cycles)', () => {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557731123241" clover="3.2.0">
-  <project timestamp="1557731123241" name="All files">
+<coverage generated="1557731589662" clover="3.2.0">
+  <project timestamp="1557731589662" name="All files">
     <metrics statements="115" coveredstatements="115" conditionals="28" coveredconditionals="28" methods="25" coveredmethods="25" elements="168" coveredelements="168" complexity="0" loc="115" ncloc="115" packages="1" files="3" classes="3"/>
     <file name="exercise-1.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-1.js">
       <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
@@ -12,18 +12,18 @@
       <line num="23" count="2" type="stmt"/>
       <line num="25" count="9" type="stmt"/>
       <line num="28" count="1" type="stmt"/>
-      <line num="31" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="31" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="32" count="1" type="stmt"/>
-      <line num="34" count="3" type="stmt"/>
-      <line num="35" count="7" type="stmt"/>
-      <line num="36" count="3" type="stmt"/>
-      <line num="41" count="3" type="stmt"/>
-      <line num="43" count="3" type="stmt"/>
-      <line num="44" count="7" type="stmt"/>
-      <line num="45" count="7" type="stmt"/>
-      <line num="46" count="24" type="cond" truecount="2" falsecount="0"/>
-      <line num="47" count="12" type="stmt"/>
-      <line num="52" count="3" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
+      <line num="35" count="5" type="stmt"/>
+      <line num="36" count="2" type="stmt"/>
+      <line num="41" count="2" type="stmt"/>
+      <line num="43" count="2" type="stmt"/>
+      <line num="44" count="5" type="stmt"/>
+      <line num="45" count="5" type="stmt"/>
+      <line num="46" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="47" count="9" type="stmt"/>
+      <line num="52" count="2" type="stmt"/>
       <line num="55" count="1" type="stmt"/>
     </file>
     <file name="exercise-2.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-2.js">
