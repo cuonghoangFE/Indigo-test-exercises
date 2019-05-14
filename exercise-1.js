@@ -33,7 +33,7 @@ function load(string) {
     } else {
         const string_array = _splitBreakLineUtils(string);
         const string_array2 = _splitKeyValueUtils(string_array);
-        return addArray(string_array2);
+        return storeKeyValueToArray(string_array2);
     }
 }
 
@@ -45,7 +45,7 @@ function _splitKeyValueUtils(array) {
     return array.map(str => str.split(/[\W]+/));
 }
 
-function addArray(arr) {
+function storeKeyValueToArray(arr) {
     let new_arr = [];
 
     arr.map(function (item0, index) {

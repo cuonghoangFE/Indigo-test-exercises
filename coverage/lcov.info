@@ -6,7 +6,7 @@ FN:30,load
 FN:40,_splitBreakLineUtils
 FN:44,_splitKeyValueUtils
 FN:45,(anonymous_5)
-FN:48,addArray
+FN:48,storeKeyValueToArray
 FN:51,(anonymous_7)
 FN:53,(anonymous_8)
 FNF:9
@@ -17,7 +17,7 @@ FNDA:3,load
 FNDA:2,_splitBreakLineUtils
 FNDA:2,_splitKeyValueUtils
 FNDA:5,(anonymous_5)
-FNDA:2,addArray
+FNDA:2,storeKeyValueToArray
 FNDA:5,(anonymous_7)
 FNDA:18,(anonymous_8)
 DA:1,1
