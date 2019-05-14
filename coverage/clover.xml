@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557731589662" clover="3.2.0">
-  <project timestamp="1557731589662" name="All files">
-    <metrics statements="115" coveredstatements="115" conditionals="28" coveredconditionals="28" methods="25" coveredmethods="25" elements="168" coveredelements="168" complexity="0" loc="115" ncloc="115" packages="1" files="3" classes="3"/>
+<coverage generated="1557807432600" clover="3.2.0">
+  <project timestamp="1557807432601" name="All files">
+    <metrics statements="118" coveredstatements="118" conditionals="28" coveredconditionals="28" methods="27" coveredmethods="27" elements="173" coveredelements="173" complexity="0" loc="118" ncloc="118" packages="1" files="3" classes="3"/>
     <file name="exercise-1.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-1.js">
-      <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
+      <metrics statements="23" coveredstatements="23" conditionals="10" coveredconditionals="10" methods="9" coveredmethods="9"/>
       <line num="1" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
       <line num="19" count="8" type="cond" truecount="2" falsecount="0"/>
@@ -15,16 +15,18 @@
       <line num="31" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="32" count="1" type="stmt"/>
       <line num="34" count="2" type="stmt"/>
-      <line num="35" count="5" type="stmt"/>
+      <line num="35" count="2" type="stmt"/>
       <line num="36" count="2" type="stmt"/>
       <line num="41" count="2" type="stmt"/>
-      <line num="43" count="2" type="stmt"/>
-      <line num="44" count="5" type="stmt"/>
       <line num="45" count="5" type="stmt"/>
-      <line num="46" count="18" type="cond" truecount="2" falsecount="0"/>
-      <line num="47" count="9" type="stmt"/>
-      <line num="52" count="2" type="stmt"/>
-      <line num="55" count="1" type="stmt"/>
+      <line num="49" count="2" type="stmt"/>
+      <line num="51" count="2" type="stmt"/>
+      <line num="52" count="5" type="stmt"/>
+      <line num="53" count="5" type="stmt"/>
+      <line num="54" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="55" count="9" type="stmt"/>
+      <line num="60" count="2" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
     </file>
     <file name="exercise-2.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-2.js">
       <metrics statements="58" coveredstatements="58" conditionals="14" coveredconditionals="14" methods="9" coveredmethods="9"/>
@@ -88,7 +90,7 @@
       <line num="103" count="1" type="stmt"/>
     </file>
     <file name="exercise-3.js" path="/Users/cuong.hoang/Desktop/Indigo-test-exercises/exercise-3.js">
-      <metrics statements="36" coveredstatements="36" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
+      <metrics statements="37" coveredstatements="37" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -115,16 +117,17 @@
       <line num="49" count="2" type="stmt"/>
       <line num="52" count="2" type="stmt"/>
       <line num="53" count="2" type="stmt"/>
-      <line num="57" count="1" type="stmt"/>
-      <line num="58" count="2" type="stmt"/>
-      <line num="59" count="2" type="stmt"/>
+      <line num="55" count="2" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
       <line num="60" count="2" type="stmt"/>
       <line num="61" count="2" type="stmt"/>
-      <line num="63" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="64" count="1" type="stmt"/>
+      <line num="62" count="2" type="stmt"/>
+      <line num="63" count="2" type="stmt"/>
+      <line num="65" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="66" count="1" type="stmt"/>
-      <line num="69" count="2" type="stmt"/>
-      <line num="77" count="1" type="stmt"/>
+      <line num="68" count="1" type="stmt"/>
+      <line num="71" count="2" type="stmt"/>
+      <line num="79" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

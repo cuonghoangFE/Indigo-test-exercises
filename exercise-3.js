@@ -20,7 +20,7 @@ function NetPayableAmount() {
     this.discountPayBill = {};
 }
 
-NetPayableAmount.prototype.getUser = function(user_id) {
+NetPayableAmount.prototype.setUser = function(user_id) {
     if (user_id_list.hasOwnProperty(user_id)) {
         this.userId = user_id;
     }
@@ -28,7 +28,7 @@ NetPayableAmount.prototype.getUser = function(user_id) {
     return 'no user_id found';
 }
 
-NetPayableAmount.prototype.getBills = function(bills) {
+NetPayableAmount.prototype.setBills = function(bills) {
     this.bills = bills;
 }
 
@@ -50,11 +50,13 @@ NetPayableAmount.prototype.getDiscountItemBill = function() {
         });
 
         this.discountPayBill[key] = { subTotal, payAmountToPromo };
-        this._getPayableDiscount();
+        this._payableDiscountUtils();
+
+        return this.discountPayBill;
     }
 }
 
-NetPayableAmount.prototype._getPayableDiscount = function() {
+NetPayableAmount.prototype._payableDiscountUtils = function() {
     for (key in this.discountPayBill) {
         const subTotal = this.discountPayBill[key].subTotal;
         const payAmountToPromo = this.discountPayBill[key].payAmountToPromo;

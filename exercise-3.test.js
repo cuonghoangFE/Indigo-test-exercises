@@ -32,11 +32,11 @@ describe('Write a program with test cases such that given a bill, it finds the n
         }
         const payable = new NetPayableAmount();
 
-        payable.getUser(1);
-        payable.getBills(bills);
-        payable.getDiscountItemBill();
+        payable.setUser(1);
+        payable.setBills(bills);
+        const handler = payable.getDiscountItemBill();
 
-        expect(payable.discountPayBill).toEqual(expected)
+        expect(handler).toEqual(expected)
     })
 
     it('when userType === 4 it should discount 5$ for every $100', () => {
@@ -50,17 +50,17 @@ describe('Write a program with test cases such that given a bill, it finds the n
         }
         const payable = new NetPayableAmount();
 
-        payable.getUser(4);
-        payable.getBills(bills);
-        payable.getDiscountItemBill();
+        payable.setUser(4);
+        payable.setBills(bills);
+        const handler = payable.getDiscountItemBill();
 
-        expect(payable.discountPayBill).toEqual(expected)
+        expect(handler).toEqual(expected)
     })
 
     it('should return user_id not found when user_id === 5', () => {
         const payable = new NetPayableAmount();
 
-        const handler = payable.getUser(5);
+        const handler = payable.setUser(5);
 
         expect(handler).toEqual('no user_id found')
     })

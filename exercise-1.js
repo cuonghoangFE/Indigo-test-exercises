@@ -31,10 +31,18 @@ function load(string) {
     if (typeof(string) !== 'string') {
         throw new Error('This is not string!');
     } else {
-        let string_array = string.split('\n');
-        let string_array2 = string_array.map(str => str.split(/[\W]+/));
+        const string_array = _splitBreakLineUtils(string);
+        const string_array2 = _splitKeyValueUtils(string_array);
         return addArray(string_array2);
     }
+}
+
+function _splitBreakLineUtils(string) {
+    return string.split('\n');
+}
+
+function _splitKeyValueUtils(array) {
+    return array.map(str => str.split(/[\W]+/));
 }
 
 function addArray(arr) {
@@ -42,7 +50,7 @@ function addArray(arr) {
 
     arr.map(function (item0, index) {
         new_arr[index] = {};
-        return item0.map((item1, i) => {
+        item0.map((item1, i) => {
             if (i % 2 === 0) {
                 new_arr[index][item1] = item0[i+1]
             }
